@@ -4,8 +4,28 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "babel-node server/index.js",
+    "lint": "eslint server",
+    "postinstall": "webpack"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^2.9.32",
+    "express": "^4.13.0",
+    "react": "^0.13.3",
+    "react-rethinkdb": "^0.2.0",
+    "rethinkdb": "^2.0.2",
+    "rethinkdb-websocket-server": "^0.1.1"
+  },
+  "devDependencies": {
+    "babel": "^5.6.14",
+    "babel-core": "^5.6.15",
+    "babel-eslint": "^3.1.20",
+    "eslint": "^0.24.0",
+    "eslint-loader": "^0.14.1",
+    "eslint-plugin-react": "^2.6.4",
+    "node-libs-browser": "^0.5.2",
+    "webpack": "^1.10.1"
+  }
 }
